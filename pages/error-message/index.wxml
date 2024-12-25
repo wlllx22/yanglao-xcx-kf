@@ -1,0 +1,20 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+
+<image style="width: 750rpx;height: 750rpx;display: block;" src="/assets/icons/api-error.svg" mode=""/>
+<view class="warning-message">
+  {{message}}
+</view>
+<view style="position: absolute;bottom: 90rpx;width: 690rpx;left: 30rpx;">
+  <van-button bindtap="restartProgram" custom-style="margin: 0 auto;width: 690rpx;" type="info">重试</van-button>
+
+</view>

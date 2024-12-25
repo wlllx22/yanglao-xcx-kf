@@ -1,0 +1,25 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+    <view class="items">
+      <item  item="{{item}}" wx:key="id" wx:for="{{items}}" />
+    </view>
+
+
+<no-result wx:if="{{!loading && items.length == 0}}" />
+<view style="height: 50rpx;">
+  
+</view>
+<navigator hover-class="none" url="/pkgQa/pages/qa/new?target_id={{target_id}}&target_type={{target_type}}" class="add" wx:if="{{target_id}}">
+    <van-button color="{{primaryBtnColor}}" type="info" block>我要提问</van-button>
+</navigator>
+
+

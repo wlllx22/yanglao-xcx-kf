@@ -1,0 +1,64 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<wxs module="stringConverter">
+  var mapping = {
+    'like': '用户点赞',
+    'customer': '客户管理',
+    'thread': '线索管理',
+    'share_customer': '顾问拓客',
+    'score': '顾问积分',
+    'event': '楼盘动态',
+    'post_event': '楼盘动态',
+    'tupai': '土拍动态',
+    'broker': '客服顾问',
+    'qa': '楼盘问答'
+  };
+
+  function convertString(input) {
+      return mapping[input] || '';
+  }
+  module.exports.convertString = convertString
+</wxs>
+<!-- <view class="message-card">
+  <van-cell title="类型" value="{{stringConverter.convertString(message.cat)}}" />
+  <van-cell title="标题" value="{{message.title}}" />
+  <van-cell title="发送时间" value="{{message.created_at}}" />
+
+</view>
+<view class="message-card">
+  <view style="padding: 20rpx 40rpx;">
+    {{message.content}}
+  </view>
+  <navigator url="{{message.url}}" class="detail-button">
+    查看详情
+  </navigator>
+  <view style="height: 30rpx;"></view>
+
+
+
+</view> -->
+<view class="message" style="margin: 30rpx auto; color: #999; text-align: center;">
+  {{message.created_at}}
+</view>
+<view class="message-container">
+  <view class="message-header">
+    <image class="message-image" src="/assets/icons/message/{{stringConverter.convertString(message.cat)}}.png" mode=""/>
+    <view class="message-title">{{message.title}}</view>
+  </view>
+  <view class="message-divider"></view>
+  <view class="message-content">{{message.content}}</view>
+  <view class="message-divider"></view>
+  <navigator url="{{message.url}}" class="message-footer">
+    <view>查看详情</view>
+    <van-icon name="arrow" />
+  </navigator>
+</view>

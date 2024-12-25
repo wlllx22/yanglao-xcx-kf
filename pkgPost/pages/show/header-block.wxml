@@ -1,0 +1,27 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="outer">
+    <view class="title-block" style="background: {{color}};">
+        <view class="first-left">
+            <view class="left-title">{{post.title}}</view>
+            <view class="left-tags">
+                <view class="left-tag" style="color: #fff;" wx:for="{{post.tags}}" wx:if="{{index <= 2}}" wx:for-item="tag" wx:key="id">
+                    {{tag.name}}
+                </view>
+            </view>
+        </view>
+        <view class="event-button">
+            <sub-button target_id='{{post.id}}' target_type='post_event' unsub_text='已订阅' is_round="{{true}}" show_icon="{{true}}" custom_style="width: 140rpx;padding: 0;height: 50rpx;font-size: 24rpx;"></sub-button>
+        </view>
+    </view>
+
+</view>

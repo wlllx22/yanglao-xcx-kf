@@ -1,0 +1,17 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="new-post-filter">
+    <city-picker style="height:100%;" bind:change="cityChange" city-id="{{filter.city_id}}" district-id="{{filter.district_id}}" />
+    <price-picker label="月薪" bind:change="priceChange" />
+    <order-picker style="height:100%;" bind:change="orderChange" options="{{orderOptions}}" />
+    <!-- <other-filter wx:if="{{options}}" filter="{{filter}}" options="{{options}}" bind:change="otherChange"></other-filter> -->
+</view>

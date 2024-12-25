@@ -1,0 +1,17 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!--pkgErshou/pages/chujiajilu/index.wxml-->
+<view>
+  <van-cell-group>
+    <van-cell title="{{item.user.mobile}}" value="{{item.bid}}￥" label="{{item.created_at}}" border="{{ true }}" wx:for="{{bids}}" />
+  </van-cell-group>
+</view>

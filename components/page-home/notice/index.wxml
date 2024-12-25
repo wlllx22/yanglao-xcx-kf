@@ -1,0 +1,28 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!-- components/pagemaker/noticebar/index.wxml -->
+<view class="notice" style="height: 100rpx;" v-cloak>
+    <view class="icon">
+        <image mode="aspectFit" src="https://tcdn.udeve.net/udyk/65f282498eca49f426f5c9c1.png" />
+    </view>
+    <view class="items">
+        <swiper autoplay="true" circular="true" interval="3000" vertical="true" style="width:100%;height:100%;">
+            <swiper-item item-id="{{index}}" data-index="{{index}}" wx:key="{{item.id}}" wx:for="{{items}}" 
+                bindtap="itemClick">
+                <navigator style="color:#333333;font-size:26rpx" class="news-title" url="/pkgNews/pages/news/show?id={{item.id}}" hover-class='none' >
+                    {{item.title}}
+                </navigator>
+
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

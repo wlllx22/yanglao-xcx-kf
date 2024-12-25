@@ -1,0 +1,62 @@
+/**
+* +----------------------------------------------------------------------
+* | 容易养老  - 开启家政营销新纪元
+* +----------------------------------------------------------------------
+* | Copyright (c) 2024 容易科技技术支持
+* +----------------------------------------------------------------------
+* | 2024
+* +----------------------------------------------------------------------
+* | Author: www.test.com
+* +----------------------------------------------------------------------
+*/
+/* components/safe-tips.wxss */
+.safe-tips {
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.safe-tips .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1.1rpx;
+    margin-bottom: 10rpx;
+}
+
+.safe-tips .title .text  {
+    margin-left: 10rpx;
+}
+
+.safe-tips .title .right .btn {
+    border: none;
+    background: none;
+    color: #5D77AB;
+    font-size: 24rpx;
+    line-height: 28rpx;
+}
+
+.safe-tips .title .left {
+    font-size: 28rpx;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.safe-tips .title .left .img {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.safe-tips .content {
+    line-height: 1.2;
+    margin-top:10rpx;
+    margin-left: 10rpx;
+    color: #999;
+}
+
+.safe-tips .content .text {
+    scale: 0.5;
+    font-size: 24rpx;
+}

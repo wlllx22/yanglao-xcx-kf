@@ -1,0 +1,41 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view wx:if="{{styleName == 3}}" config="{{item.link}}" class="link" hover-class="none" bindtap="clickHandle">
+  <view class="icon-3">
+    <view wx:if="{{item.dynamicInnerText}}" class="count-3">
+      {{item.name}}<text decode="{{true}}">&emsp;</text>{{innerText}}
+    </view>
+    <view wx:else class="count-3">
+      {{item.name}}<text decode="{{true}}">&emsp;</text>{{item.innerText}}
+    </view>
+    <!-- <image class="icon-img" src="{{item.icon}}" style="width:220rpx;height:100rpx;"></image> -->
+    <view wx:if="{{item.badgeText}}" class="badge">
+      <view class="text">{{item.badgeText}}</view>
+    </view>
+  </view>
+  <!-- <view class="name" style="color: {{ item.color || '#333333' }}">{{item.name}}</view> -->
+</view>
+<view wx:else config="{{item.link}}" class="link" hover-class="none" bindtap="clickHandle">
+  <view class="icon">
+    <view wx:if="{{item.dynamicInnerText}}" class="count">
+      {{innerText}}
+    </view>
+    <view wx:else class="count">
+      {{item.innerText}}
+    </view>
+    <image class="icon-img" src="{{item.iconUrl}}" style="width:{{item.size}}rpx;height:{{item.size}}rpx;"></image>
+    <view wx:if="{{item.badgeText}}" class="badge">
+      <view class="text">{{item.badgeText}}</view>
+    </view>
+  </view>
+  <view class="name" style="color: {{ item.color || '#333333' }}">{{item.name}}</view>
+</view>

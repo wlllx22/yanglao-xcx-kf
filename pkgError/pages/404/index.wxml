@@ -1,0 +1,22 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="lose-box">
+  <image src="images/0.png"></image>
+  <view class="lose-text">
+    <text>页面丢失</text>
+    <text>\n</text>
+    <text>{{ error }}</text>
+  </view>
+  <navigator open-type="switchTab" class="lose-back" url="/pages/home/home">
+    <text>返回主页</text>
+  </navigator>
+</view> 

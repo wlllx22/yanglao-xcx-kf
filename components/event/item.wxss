@@ -1,0 +1,71 @@
+/**
+* +----------------------------------------------------------------------
+* | 容易养老  - 开启家政营销新纪元
+* +----------------------------------------------------------------------
+* | Copyright (c) 2024 容易科技技术支持
+* +----------------------------------------------------------------------
+* | 2024
+* +----------------------------------------------------------------------
+* | Author: www.test.com
+* +----------------------------------------------------------------------
+*/
+/* components/event/item.wxss */
+
+.event {}
+
+.event .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.event .title .circle {
+    width: 22rpx;
+    height: 22rpx;
+    border: 6rpx solid rgba(25, 137, 250, 1);
+    border-radius: 22rpx;
+    margin-right: 30rpx;
+}
+
+.event .title .time {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.event .content {
+    font-size: 28rpx;
+    color: #666;
+    padding: 14rpx 0 0rpx 42rpx;
+    border-left: 2px solid #f4f4f4;
+    margin-left: 10rpx;
+    margin-bottom: 30rpx;
+    line-height: 1.5;
+}
+
+.event .strong {
+    font-weight: bolder;
+}
+
+.event .images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event .images .image-item {
+    width: 200rpx;
+    height: 200rpx;
+    background: #f9f9f9;
+    border-radius: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.event .images .image-item image {
+    width: 180rpx;
+    height: 180rpx;
+}

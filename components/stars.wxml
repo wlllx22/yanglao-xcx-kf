@@ -1,0 +1,19 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="mystars mystars-{{ big ? 'big' : 'default' }}">
+  <block   wx:for="{{[1,2,3,4,5]}}" wx:for-item="score">
+    <view data-value="{{score}}" bindtap="scoreClick">
+        <image wx:if="{{value >= score }}" src="/assets/icons/star-yellow.png"></image>
+        <image wx:if="{{value < score }}" src="/assets/icons/star-dark.png"></image>
+      </view>
+    </block>
+</view>

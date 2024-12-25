@@ -1,0 +1,18 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="post-order-picker">
+    <view class="label {{ popShow === true ? 'active' : '' }}" bindtap="popToggleHandle">
+        {{ order.label || '排序' }}
+        <van-icon name="arrow-down" />
+    </view>
+    <mypicker bind:close="popToggleHandle" bind:change="orderChange" options="{{options}}" show="{{popShow}}"></mypicker>
+</view>

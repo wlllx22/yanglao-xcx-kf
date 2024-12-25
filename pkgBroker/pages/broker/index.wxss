@@ -1,0 +1,44 @@
+/**
+* +----------------------------------------------------------------------
+* | 容易养老  - 开启家政营销新纪元
+* +----------------------------------------------------------------------
+* | Copyright (c) 2024 容易科技技术支持
+* +----------------------------------------------------------------------
+* | 2024
+* +----------------------------------------------------------------------
+* | Author: www.test.com
+* +----------------------------------------------------------------------
+*/
+/* pages/broker/index.wxss */
+van-search{
+  width: 100%;
+}
+
+.search-box .van-cell  {
+  background:#fff ;
+}
+
+.broker-item{
+    background: #ffffff;
+    height: 160rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.broker{
+  margin: 0 auto;
+}
+.footer{
+  width: 710rpx;
+  height: 100rpx;
+  background: linear-gradient(-89.89deg, #1A73E7 0%, #64ABFF 100%);
+  margin: 0 auto;
+  border-radius: 50rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  position: fixed;
+  bottom: 60rpx;
+  left: 20rpx;
+}

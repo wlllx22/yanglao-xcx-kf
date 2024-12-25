@@ -1,0 +1,21 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!-- components/range-input/index.wxml -->
+<view class="box">
+    <van-field bind:blur="blurHandle" class="myinput" bind:input="inputHandle" maxlength="{{maxlength}}" clearable type="number" data-key="leftValue" value="{{ leftValue }}" placeholder="请输入">
+        <text slot="right-icon"></text>
+    </van-field>
+    <view class="blank-text">至</view>
+    <van-field bind:blur="blurHandle" class="myinput" maxlength="{{maxlength}}" clearable type="number" value="{{ rightValue }}" placeholder="请输入" data-key="rightValue" bind:input="inputHandle">
+        <text slot="right-icon">{{unit}}</text>
+    </van-field>
+</view>

@@ -1,0 +1,40 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<block wx:if="{{!loading}}">
+    <view wx:if="{{item.content_type == 'html'}}" class="news-content">
+        <box padding="20" margin-bottom="20" width="710" >
+            <view class="header">
+                <view class="h1">{{item.title}}</view>
+                <view class="meta">
+                    <text class="author" wx:if="{{item.author}}">{{item.author}}</text>
+                    <text class="date"  wx:if="{{item.date}}">发布于：{{item.date}} /  </text>
+                    <text class="views">浏览量：{{ item.view_nums}}</text>
+                </view>
+                <view class="summary" wx:if="{{item.summary}}">
+                    {{ item.summary }}
+                </view>
+            </view>
+            <view class="raw">
+                <raw-html html="{{item.content}}"></raw-html>
+                <van-divider contentPosition="center">
+                <text class="end">END</text></van-divider>
+            </view>
+        </box>
+    </view>
+    <web-view  wx:if="{{item.content_type == 'url'}}" src='{{item.url}}' />
+    <view class="video" wx:if="{{item.content_type == 'video'}}">
+        <video  controls id="video"  src="{{item.url}}" bindended="endAction" bindplay="startAciton" custom-cache="{{false}}"></video>
+    </view>
+</block>
+<block wx:else>
+loading
+</block>

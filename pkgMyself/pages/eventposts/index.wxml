@@ -1,0 +1,28 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!--pkgEventPosts/pages/posts/index.wxml-->
+<!--pages/post/index.wxml-->
+
+<view class="outer" wx:if="{{posts.length > 0}}">
+  <view class="item-outer">
+    <view wx:for="{{posts}}" wx:for-item="postitems">
+      <view wx:for="{{postitems}}" class="post-item">
+        <post post="{{item}}"></post>
+      </view>
+    </view>
+        
+  </view>
+  
+</view>
+
+<no-result wx:else />
+

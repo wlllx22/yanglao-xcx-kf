@@ -1,0 +1,21 @@
+  <!--
+   +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+   | 容易养老  - 开启家政营销新纪元
+   +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   | Copyright (c) 2024 容易科技技术支持
+   +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   | 2024
+   +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   | Author: www.test.com
+   +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  -->
+  <view class="search-box" wx:for="{{house_list}}"bindtap="selectHanlde" data-index="{{index}}">
+    <view class="search-top">
+      <text>{{item.title}}</text>
+      <text>{{item.sale_status_item.name}}</text>
+    </view>
+    <view class="search-bottom">
+      <text>{{item.street}}</text>
+      <text>{{item.average_price_info.text}}{{item.average_price_info.px}}</text>
+    </view>
+  </view>

@@ -1,0 +1,16 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<van-popup style="width:100%;" show="{{show}}" position="middle">
+    <view class="outer" style="width:710rpx;margin:0 auto;" >
+        <video wx:if="{{show}}" style="width:100%;" src="{{url}}" autoplay="{{true}}" ></video>
+    </view>
+</van-popup>

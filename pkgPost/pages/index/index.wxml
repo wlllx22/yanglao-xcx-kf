@@ -1,0 +1,43 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="topbar">
+    <view class="header" wx:if="{{!albumId}}">
+        <view class="ditu" bindtap="gotoMap">
+            <block wx:if="{{ mode == 'list'}}">
+                <van-icon name="location" size="28rpx;" />
+                地图
+            </block>
+
+            <block wx:else>
+                <van-icon name="bars" size="28rpx;" />
+                列表
+            </block>
+        </view>
+        <van-search name="kw" shape="round" value="{{kw}}" placeholder-style="font-size:24rpx;color:#cecece;"
+            placeholder="输入工种、姓名等关键词" background="#none" field-class="search-box-field" custom-class="search-box"
+            bind:change="kwChange" bind:clear="kwClear" use-action-slot focus="{{false}}">
+            <view slot="action" class="action-btn" bind:tap="onSearch">搜索</view>
+        </van-search>
+    </view>
+    <view class="filter" style="top:{{ !albumId ? '110rpx' : '0rpx'}}">
+        <post-filter filter="{{filter}}" bind:change="filterChange" />
+    </view>
+</view>
+<album-info wx:if="{{ mode == 'list' &&  albumId}}" album="{{album}}"></album-info>
+<view wx:if="{{mode == 'list'}}" class="res">
+
+    <items album-key="{{ album ? album.key : ''}}" show-total-count="{{true}}" wx:if="{{filter}}" filter="{{filter}}" />
+
+</view>
+<block wx:else>
+    map block
+</block>

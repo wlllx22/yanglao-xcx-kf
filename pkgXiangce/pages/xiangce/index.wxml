@@ -1,0 +1,25 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!-- pkgXiangce/pages/xiangce/index.wxml -->
+<viwe class="header" >
+    <van-tabs animated type="line" color="{{primaryColor}}" bind:change="tabChange" sticky>
+        <van-tab wx:key="id" wx:for="{{cats}}" wx:for-item="cat" title="{{cat.name}}">
+            <view class="tab-outer"><media-items items="{{cat.media_items}}" /></view>
+        </van-tab>
+    </van-tabs>
+</viwe>
+
+<view style="height: 150rpx;">
+    
+</view>
+
+<page-contact pid="{{postId}}" brokerId="{{brokerId}}"></page-contact>

@@ -1,0 +1,23 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<header title="优秀客服顾问"></header>
+<block>
+  <scroll-view scroll-x="{{true}}">
+    <view class="brokers">
+      <broker-block-item item="{{item}}" wx:key="id" wx:for="{{items}}" wx:key="id"></broker-block-item>
+    </view>
+
+  </scroll-view>
+
+  <view class="blank"></view>
+
+</block>

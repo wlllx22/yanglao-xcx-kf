@@ -1,0 +1,24 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!--pkgWrok/pages/index.wxml-->
+<view class="header" style="background-color: {{primaryColor}};"></view>
+<view class="cell-container">
+	<view wx:for="{{myIcons}}">
+		<van-cell wx:for="{{item.items}}" wx:for-item="btn" bindtap="btnHandle" data-name="{{btn.name}}" data-url="{{btn.url}}" is-link>
+			<view slot="title" class="cell-title">
+				<image class="cell-image" src="{{btn.icon_url}}" mode="" />
+				<view class="cell-text">{{btn.name}}</view>
+			</view>
+		</van-cell>
+	</view>
+
+</view>

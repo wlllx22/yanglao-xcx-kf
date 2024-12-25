@@ -1,0 +1,28 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<post-title post="{{post}}"></post-title>
+<box padding="30">
+    <view class="ecats">
+        <view bindtap="catClickHandle" data-index="{{index}}" style="{{ currentCatIndex == index ? 'background: '+ primaryColor + ';' : '' }}" class="cat-item {{ currentCatIndex == index ? 'active': '' }}" wx:for="{{cats}}" wx:for-item="cat">
+            {{cat.name}}({{cat.count}})
+        </view>
+    </view>
+</box>
+<box padding="30" wx:if="{{items.length >0 && !loading}}">
+    <view class="tips" bindtap="tipsHandle">
+        <van-icon name="/assets/icons/safe-tips-icon.png" />
+        <text>楼盘资讯</text>
+        <text class="b">免责声明</text>
+    </view>
+    <event event="{{event}}" can-delete="{{user && user.id == broker.id}}" wx:key="id" class="event" wx:for="{{items}}" wx:for-item="event"></event>
+</box>
+<no-result wx:if="{{!loading && items.length == 0}}" />

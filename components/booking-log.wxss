@@ -1,0 +1,31 @@
+/**
+* +----------------------------------------------------------------------
+* | 容易养老  - 开启家政营销新纪元
+* +----------------------------------------------------------------------
+* | Copyright (c) 2024 容易科技技术支持
+* +----------------------------------------------------------------------
+* | 2024
+* +----------------------------------------------------------------------
+* | Author: www.test.com
+* +----------------------------------------------------------------------
+*/
+/* components/booking-log.wxss */
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer.btns{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.footer .time{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-wrap: nowrap;
+  font-size:24rpx;
+}

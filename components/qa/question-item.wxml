@@ -1,0 +1,39 @@
+      <!--
+       +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+       | 容易养老  - 开启家政营销新纪元
+       +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       | Copyright (c) 2024 容易科技技术支持
+       +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       | 2024
+       +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       | Author: www.test.com
+       +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      -->
+      <view class="item">
+        <navigator  url="/pkgQa/pages/qa/qa?id={{item.id}}" hover-class="none" class="question">
+            <q-icon />
+            <view class="body">
+                <view class="content">
+                    <text wx:if="{{item.target_name}}" class="target" bindtap="gotoTarget">#{{item.target_name}}#</text>
+                    {{ item.content }}
+                </view>
+                <view class="count" wx:if="{{item.answers_count == 0}}">
+                   {{ item.answers_count}}条回答 
+                </view>
+            </view>
+        </navigator>
+            <navigator  url="/pkgQa/pages/qa/qa?id={{item.id}}" hover-class="none"  class="answer" wx:if="{{item.first_answer}}">
+                <view class="header">
+                        <view class="avatar">
+                            <image src="{{item.first_answer.user.avatar}}" />
+                        </view>
+                        <view class="name">
+                            {{ item.first_answer.user.name}} 
+                        </view>
+                </view>
+                <view class="content">{{ item.first_answer.content }}</view>
+                <view class="footer">
+                    <like count="{{tem.first_answer.likes}}"  aid="{{item.first_answer.id}}" />
+                </view>
+            </navigator>
+      </view>

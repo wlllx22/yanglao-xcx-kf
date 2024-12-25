@@ -1,0 +1,40 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view hover-class="none" class="question">
+    <view class="header">
+        <view class="left">
+            <ud-icon name="question" customStyle="margin-right:10rpx;"/>
+            <van-tag style="margin: 0 10rpx;" wx:for="{{tags}}" type="primary" plain>
+                {{item}}
+            </van-tag>
+            <view wx:if="{{item.target_name}}" style="color: {{primaryColor}};" class="target-name">#{{ item.target_name }}#</view>
+            <view wx:if="{{item.is_done}}" style="color: {{primaryColor}};border: 1rpx solid {{primaryColor}};" class="jiejue">已解决</view>
+        </view>
+        <view class="right">{{item.answers_count || 0 }}回答</view>
+    </view>
+    <navigator url="/pkgQa/pages/qa/qa?id={{item.id}}" class="body">{{ item.content }}</navigator>
+    <view class="footer">
+        <view class="left">
+            <image class="avatar" src="{{avatar}}" />
+            <text style="margin-left:10rpx;">{{ item.user.name }}</text>
+            <text>{{item.created_at}}</text>
+        </view>
+        <view class="right">
+            <navigator wx:if="{{!item.is_done}}" url="/pkgQa/pages/qa/reply?qid={{item.id}}" class="btn1">
+                <van-button color="{{primaryColor}}" plain size="mini">我要回答</van-button>
+            </navigator>
+            <navigator wx:else url="/pkgQa/pages/qa/qa?id={{item.id}}" class="btn2">
+                <van-button color="{{primaryColor}}" plain size="mini">查看回答</van-button>
+            </navigator>
+        </view>
+    </view>
+</view>

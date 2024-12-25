@@ -1,0 +1,28 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<block-box title-size="36"  leftHat="true" leftHatColor="{{color}}" title="{{ value.title }}" subTitle="{{ value.more_title }}" url="{{value.more_url}}">
+    <view class="qas">
+        <view class="empty" wx:if="{{value.items.length == 0}}">还没有人提问</view>
+        <view class="item" hover-class="none" wx:key="id" wx:for="{{value.items}}">
+            <view class="icon">问</view>
+            <view class="info">
+                <navigator hover-class="none" url="/pkgQa/pages/qa/qa?id={{item.id}}" class="content">
+                    {{item.content}}
+                </navigator>
+                <view class="footer">
+                    <view class="count">{{item.answers.length}}条回答</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <block-button color="{{color}}" url="/pkgQa/pages/qa/new?target_id={{value.post_id}}&target_type=post" buttonVal='去提问' />
+</block-box>

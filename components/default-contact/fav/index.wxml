@@ -1,0 +1,18 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<block>
+    <login-window bind:success="clickHandle" class="loginwindow"></login-window>
+    <view report-submit class="myfav" bindtap="clickHandle">
+        <ud-icon name="fav-{{status}}"/>
+        <text>{{ status == 1 ? '已收藏' : '收藏' }}</text>
+    </view>
+</block>

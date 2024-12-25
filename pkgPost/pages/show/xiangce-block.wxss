@@ -1,0 +1,42 @@
+/**
+* +----------------------------------------------------------------------
+* | 容易养老  - 开启家政营销新纪元
+* +----------------------------------------------------------------------
+* | Copyright (c) 2024 容易科技技术支持
+* +----------------------------------------------------------------------
+* | 2024
+* +----------------------------------------------------------------------
+* | Author: www.test.com
+* +----------------------------------------------------------------------
+*/
+/* pkgPost/pages/show/xiangce-block.wxss */
+.items-outer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height:auto;
+}
+
+.xiangce-item {
+    width: 315rpx;
+    height: 240rpx;
+    border-radius: 15rpx;
+    margin-right: 25rpx;
+    margin-top: 15rpx;
+}
+
+.xiangce-item:nth-child(2n+0) {
+    margin-right: 0;
+}
+
+.xiangce-item-cover{
+    width: 315rpx;height: 240rpx;border-radius: 10rpx;
+}
+.xiangce-item-type{
+    position: absolute;width: 100rpx;height: 100rpx;top: 70rpx;right: 115rpx;
+}
+.mask{
+    width:100rpx;height:100rpx;position: absolute;top: 70rpx;left: 115rpx;
+}

@@ -1,0 +1,24 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<van-popup lock-scrol="{{true}}" show="{{show}}" duration="800" custom-style="background:none;">
+  <view style="background-image:url('{{bg}}')" class="window">
+
+    <view wx:if="{{closable}}" class="close" bindtap="closeWindow">
+      <van-icon name="cross" size="24"></van-icon>
+    </view>
+
+    <van-button loading-text="登录中" loading="{{loading}}" icon="wechat" open-type="getPhoneNumber" bind:getphonenumber="loginHandle"
+      custom-style="width:519rpx;height:90rpx;border-raidus:10rpx;"
+      color="{{primaryBtnColor}}" wx:if="{{!is_wxwork}}" block>微信登录</van-button>
+
+  </view>
+</van-popup>

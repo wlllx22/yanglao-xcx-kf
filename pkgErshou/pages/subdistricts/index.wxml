@@ -1,0 +1,43 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="header">
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入工种名称"
+    use-action-slot
+    bind:change="inputChange"
+    bind:search="onConfirm"
+  >
+    <view slot="action" bind:tap="onConfirm">确定</view>
+  </van-search>
+</view>
+
+<view class="res">
+ <view class="res-title">请选择</view>
+
+ <view class="res-list">
+  <van-cell-group wx:if="{{items.length}}|">
+    <van-cell
+      data-index="{{index}}"
+      wx:for="{{items}}"
+      wx:for-key="{{item.id}}"
+      bind:tap="itemClick"
+      size="large"
+      is-link
+      title="{{item.name}}"
+      value="{{item.street}}"
+      border="{{ true }}"
+    />
+  </van-cell-group> 
+ </view>
+
+</view>

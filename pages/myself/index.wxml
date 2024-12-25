@@ -1,0 +1,35 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<myselflogin class="myselflogin" ></myselflogin>
+
+<card title='' width="690">
+	<view class="icons">
+		<btn wx:for="{{btnlist}}" item="{{item}}" class="icon-item arr-4" ></btn>
+	</view>
+</card>
+
+<card title='家政工具' width="690">
+	<view class="icons">
+		<btn wx:for="{{toollist}}" item="{{item}}" class="icon-item arr-4" ></btn>
+	</view>
+</card>
+
+<card title='常用功能' width="690">
+	<view class="icons">
+		<btn wx:for="{{commonlist}}" item="{{item}}" class="icon-item arr-4" ></btn>
+		<btn item="{{logoutBtn}}" class="icon-item arr-4" wx:if="{{ LOGIN_FLAG == 1 }}" ></btn>
+	</view>
+</card>
+
+
+<recommended-post-items ></recommended-post-items>
+<copyright></copyright>

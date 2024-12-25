@@ -1,0 +1,22 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="outer" >
+    
+    <swiper style="height:280rpx;overflow:hidden;width:710rpx;" indicator-dots="{{items.length > 1}}" autoplay="{{ items.length > 1}}" interval="{{interval}}" duration="500" circular="{{items.length > 1}}" indicator-color="rgba(255,255,255,0.7)" autoplay indicator-active-color="#1989fa">
+        <swiper-item wx:key="{{index}}" wx:for="{{items}}" bindtap="goto" data-index="{{index}}">
+            <link config="{{item.link}}" custom-style="link">
+                <image mode="scaleToFill" style="width:100%;height:100%;border-radius:10rpx;" src="{{item.url }}"></image>
+            </link>
+        </swiper-item>
+    </swiper>
+  
+</view>

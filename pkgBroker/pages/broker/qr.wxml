@@ -1,0 +1,29 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<ud-box padding="0" width="710">
+    <painter palette="{{palette}}" scaleRatio='3' bind:imgOK="onImgOK" bind:imgErr="onImgErr" />
+    <image class="poster-image" src="{{posterUrl}}" show-menu-by-longpress='true'></image>
+</ud-box>
+    <view class="footer">
+       
+        
+        <van-notice-bar
+        left-icon="volume-o"
+        scrollable="{{false}}"
+        wrapable 
+        text=""
+        />
+        <van-button type="info" custom-style="margin-top:20rpx;" color="{{primaryBtnColor}}" block bind:click='saveFile'>保存到相册</van-button>
+    
+    </view>
+    
+

@@ -1,0 +1,31 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="box" style="width:{{width}}rpx;border-radius:{{radius}}rpx">
+    <view class="card ">
+        <view wx:if="{{title}}" class="card-header">
+            <view class="card-header-title">
+                <view class="name" style="font-size:{{titleSize}}rpx;color:{{titleColor}}">
+                    {{title}}
+                    <view wx:if="{{hat}}" class="card-hat"></view>
+                </view>
+            </view>
+            <view wx:if="{{subTitle}}" class="sub-title card-header-action" bindtap='actionHandle'>
+                <text class="card-header-action-name">{{subTitle}}</text>
+                <van-icon wx:if="{{url}}" name="arrow" />
+            </view>
+        </view>
+
+        <view class="card-body" >
+            <slot></slot>
+        </view>
+    </view>
+</view>

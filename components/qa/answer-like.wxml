@@ -1,0 +1,23 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view hover-class="none" class="like {{ liked ? 'active' : '' }}" bindtap="likeHandle">
+	<van-button
+	 hover-class="none"
+	 plain
+	 type="default"
+	 size="mini"
+	 round
+	 icon="{{ liked ? 'good-job' : 'good-job-o' }}">
+		{{ likesCount }}
+	</van-button>
+</view>
+

@@ -1,0 +1,27 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<block wx:if="{{item.status != 3}}">
+    <van-panel title="状态：{{statusName[item.status]}}" status="{{ item.date  }} {{ item.time }}" use-footer-slot>
+        <view style="height:30rpx;"></view>
+        <post-item style="" post="{{item.post}}" border="{{false}}" shadow="{{false}}" />
+        <view slot="footer" class="footer">
+            <view class="time">姓名：{{ item.name }} 电话：{{ item.mobile }}</view>
+            <view class="btns">
+                <van-button plain wx:if="{{userGroup == 'broker'}}" size="mini" bindtap="callHandle" type="info" style="margin-right:20rpx;">
+                    拨打电话
+                </van-button>
+                <van-button size="mini" bindtap="menuToggle" plain type="info">管理</van-button>
+            </view>
+        </view>
+    </van-panel>
+    <van-action-sheet title="管理菜单" cancle-text="取消" show="{{ showMenu }}" actions="{{ actions }}" bind:close="menuToggle" bind:select="onSelect" />
+</block>

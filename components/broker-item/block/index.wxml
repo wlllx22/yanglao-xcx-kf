@@ -1,0 +1,21 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view style="background-image: url({{bg}});" class="broker-item">
+  <image class="level" src="{{levelImg}}"></image>
+  <navigator url="/pkgBroker/pages/broker/profile?user_id={{item.user_id}}" hover-class="none">
+    <van-image round width="100rpx" height="100rpx" src="{{item.avatar}}?imageView2/5/h/100/w/100" lazy-load />
+  </navigator>
+  <view class="broker-name line-limit">{{ item.name }} </view>
+  <view class="broker-company line-limit">{{ item.post_title || '' }}</view>
+  <van-button custom-style="background:none;border-radius:6rpx;overfollow:hidden;opacity: 0;" bindtap="zixun" icon="comment" size="mini" type="primary" plain color="#333333">咨询</van-button>
+</view>
+<login-window class="loginwindow"></login-window>

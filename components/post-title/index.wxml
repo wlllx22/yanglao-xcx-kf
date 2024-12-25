@@ -1,0 +1,19 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="header" style="background-image:url('{{post.cover}}');height:{{height}}rpx;width:{{width}}rpx;">
+    <view bindtap="clickHandle" class="mask">{{ post.title }}
+        <view class="arrow">
+            <van-icon size="32rpx" name="arrow" />
+        </view>
+    </view>
+
+</view>

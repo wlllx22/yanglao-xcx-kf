@@ -1,0 +1,18 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!--components/recom-posts.wxml-->
+<view>
+    <card width="750" title="{{title}}" hat="{{false}}">
+      <post wx:key="{{item.id}}" class="recom-post" wx:if="{{item && item.id != excludeId }}" wx:for="{{posts}}" item="{{item}}"></post>
+      <view wx:if="{{posts.length == 0}}" >没有数据</view>
+  </card>
+</view>

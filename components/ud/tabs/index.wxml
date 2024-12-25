@@ -1,0 +1,21 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<scroll-view class="outer" scroll-x>
+
+  <view class="tabs">
+
+        <view class="tab {{activeIndex == index ? 'active' : ''}} " wx:for="{{data}}" data-index='{{index}}' bind:tap="tabChange">
+            <view class="name">{{item.name || item.title || item.label}}</view>
+            <view style="background-color:{{primaryColor}}" wx:if="{{activeIndex === index }}" class="border" ></view>
+        </view>
+    </view>
+</scroll-view>

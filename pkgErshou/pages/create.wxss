@@ -1,0 +1,57 @@
+/**
+* +----------------------------------------------------------------------
+* | 容易养老  - 开启家政营销新纪元
+* +----------------------------------------------------------------------
+* | Copyright (c) 2024 容易科技技术支持
+* +----------------------------------------------------------------------
+* | 2024
+* +----------------------------------------------------------------------
+* | Author: www.test.com
+* +----------------------------------------------------------------------
+*/
+/* pkgErshou/pages/create.wxss */
+.huxingbox {
+  background-color: #ffffff;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f6f7f7;
+}
+
+.huxing {
+  line-height: 80rpx;
+  color: #646566;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 710rpx;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+textarea {
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.fieldBox {
+  min-height: 300rpx;
+  background-color: #ffffff;
+}
+
+/* 解决多行能出现向左对齐的情况 */
+.van-cell__value>text {
+  display: inline-block;
+  text-align: left;
+  word-break: break-all;
+}
+
+.van-cell__title {
+  /* min-width: 30%!important; */
+  min-width: 7em; 
+  width: 7em; 
+}
+
+/* .van-cell__value {
+min-width: 80%;
+} */

@@ -1,0 +1,23 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!--components/pagemaker/newslist/index.wxml-->
+<header title='家政资讯'></header>
+<view style="width: 690rpx;margin: 0 auto;">
+  <view class="new-cats">
+    <view class="new-cat" data-i="{{index}}" bindtap="catHandle" style="{{ newCatActive == index ? 'font-weight: bold;color:' + primaryColor + ';background:' + primaryColor + '25;' : '' }}" wx:for="{{newsCats}}">{{item.name}}</view>
+  </view>
+<view class="new-items">
+    <news-item  wx:for="{{newsItems}}" wx:for-key="id" item="{{item}}"></news-item>
+    <no-result wx:if="{{!newsItems.length}}" />
+</view>
+</view>
+

@@ -1,0 +1,33 @@
+
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<navigator  hover-class="none" class="{{className}}" url="/pkgNews/pages/news/show?id={{item.id}}">
+
+  <view class="title-block">
+        <view class="title"> <view class="new-tag" style="background-color: {{primaryColor}};">{{item.news_cat}}</view> {{item.title}}</view>
+        <view class="meta">
+            <image class="new-cover" wx:if="{{item.avatar}}" src="{{item.avatar}}" mode=""/>
+            <view class="new-author">
+                <text>{{item.author || ''}}</text>
+                <text style="margin-right: 15px;"></text>
+                <text>{{item.date || ''}}</text>
+            </view>
+            
+        </view>
+    </view> 
+    <view class="cover" hover-class="none" hover-stop-propagation="false">
+        <image class="cover img" src="{{item.cover }}?imageView2/2/w/250"></image>
+        <image src="/assets/icons/bofang.png" class="play"></image>
+    </view>
+
+</navigator>
+

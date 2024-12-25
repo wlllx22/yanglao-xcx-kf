@@ -1,0 +1,28 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="safe-tips" wx:if="{{statement}}">
+  <view class="title"> 
+    <view class="left">
+      <image class="img" mode="widthFix" src="/assets/icons/safe-tips-icon.png" />  <text class="text">免责声明</text> 
+    </view>
+
+    <view class="right">
+      <button class="btn" plain open-type="contact" bindcontact="handleContact">报告数据错误</button>
+    </view>
+
+  </view>
+   <view class="content" >
+   <text class="text" selectable="true">{{statement}}</text>
+
+   </view>
+</view>
+

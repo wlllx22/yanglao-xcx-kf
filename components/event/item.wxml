@@ -1,0 +1,30 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!-- components/event/item.wxml -->
+<view class="event">
+    <view class="title">
+        <view style="border-color:{{color}}" class="circle"></view>
+        <view class="time">
+            {{ event.author || '管理员'}} 在 {{ event.pub_time || '未知时间'}}发布
+            <van-button wx:if="{{canDelete}}" plain round data-id="{{event.id}}" bindtap="deleteHandle" size="mini" icon="delete" type="danger" />
+        </view>
+    </view>
+    <view class="content">
+        <text class="strong">{{event.title || '' }}</text>
+        {{event.content}}
+        <view class="images">
+            <view bindtap="imageClickHandle" class="image-item" wx:for="{{images}}" wx:for-item="url" data-index="{{index}}">
+                <image mode="aspectFit" src="{{url}}" />
+            </view>
+        </view>
+    </view>
+</view>

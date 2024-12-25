@@ -1,0 +1,24 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="outer {{size}}" style="height:{{height}}rpx;background-color:{{color}};width:{{width}}rpx;border-radius:{{borderRadius}}rpx;">
+  <view class="title">{{ title }}</view>
+  <view class="body">
+    <slot></slot>
+  </view>
+  <image class="bg" wx:if="{{image}}" src="{{image}}" />
+  
+  <view class="bg-mask"></view>
+  <view class="bg-circle c1"></view>
+  <view class="bg-circle c2"></view>
+  <view class="bg-circle c3"></view>
+  <view class="bg-circle c4"></view>
+</view> 

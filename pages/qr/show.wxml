@@ -1,0 +1,24 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<view class="outer">
+
+  <view wx:if="{{loading}}" class="loading">
+    正在解析二维码...
+  </view>
+  
+  <view  wx:elif="{{error}}" class="error">
+     <view class="text">二维码解析失败</view>
+     <van-button size="midume" block round custom-style="margin-top:20px;" bindtap="goHome" >回到首页</van-button>
+  </view>
+
+
+</view>

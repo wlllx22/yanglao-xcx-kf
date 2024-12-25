@@ -1,0 +1,27 @@
+<!--
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ | 容易养老  - 开启家政营销新纪元
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Copyright (c) 2024 容易科技技术支持
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | 2024
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ | Author: www.test.com
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<!-- components/pagemaker/searchbar/index.wxml -->
+<view style="background: {{color}};padding: 20rpx;margin-bottom: 20rpx;">
+    
+    <view class="searchbar  body-style-round" style="height:80rpx;border-color:#cecece;background-color:#ffffff">
+    <view bindtap="gotoSearch" class="body">
+        <view class="left-part">
+            <search-icon url="https://tcdn.udeve.net/fang2021-pagemaker-assets/search-icon.png" style="margin-right:20rpx;" />
+            <view class="text" style="color: #999999">找阿姨？会做饭,带小孩</view>
+        </view>
+    </view>
+    <navigator url="/pkgMap/pages/map/index" hover-class="none"  class="footer" >
+        <image src="https://tcdn.udeve.net/fang2021-pagemaker-assets/search-icon.png" />
+       <view>找阿姨</view> 
+    </navigator>
+</view>
+</view>
