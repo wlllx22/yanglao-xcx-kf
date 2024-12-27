@@ -123,8 +123,10 @@ module.exports = {
     const app = getApp();
     /* 从服务器获取用户信息并保存到localstorage中 */
     userApi.getMyselfInfo().then((resp) => {
+      console.log("2.getMyselfInfo:", resp);
+      console.log("2.getMyselfInfo:", resp.data.code);
       if (resp.data.code != 0) {
-        console.log("拉取当前登录用户信息时候出错，请检查loadUserInfo方法");
+        console.log("2.拉取当前登录用户信息时候出错，请检查loadUserInfo方法");
         return false;
       }
       var user = resp.data.data;

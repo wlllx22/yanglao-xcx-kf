@@ -56,7 +56,7 @@ Component({
       var _this = this
       userApi.getMyselfInfo().then((resp) => {
         if (resp.data.code != 0) {
-          console.log("拉取当前登录用户信息时候出错，请检查loadUserInfo方法")
+          console.log("1.拉取当前登录用户信息时候出错，请检查loadUserInfo方法")
           return false;
         }
         var user = resp.data.data

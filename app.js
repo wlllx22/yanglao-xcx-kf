@@ -23,7 +23,16 @@ App({
         backToReload: false, // 通过naviate back 返回页面后，是否需要刷新页面数据？ 在onShow函数总判断，如果为true，就刷新页面数据
         cityId: null, // 全局城市过滤
         EXT: EXT,
-        myconfigs: null,
+        myconfigs: {
+            color: {
+                primary_btn: '#1d5de2',
+                primary: '#968dea'
+            },  
+            text_banner: {
+                title: '欢迎使用',
+                content: '欢迎使用'
+            },
+        },
         ui: {},
         color: {
             primary: '#1989fa'//浅蓝色

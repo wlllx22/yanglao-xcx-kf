@@ -20,7 +20,7 @@
 		</navigator>
 
 		<navigator hover-class="none" url="/pkgMyself/pages/profile/index" class="name-info">
-			<view class="name">{{ userInfo.name }}
+			<view class="name">{{ userInfo.nickname }}
 				<van-icon custom-style="margin-left: 20rpx" size="28rpx" name="edit" />
 			</view>
 			<view class="desc">{{ userInfo.mobile }}</view>
