@@ -13,6 +13,7 @@ let request = require('../utils/request.js');
 
 // 更新用户信息(avatar/name)     1
 export function updateUserProfile (profile) {
+    return request.put("/admin-api/system/user/profile/update", profile);
     // profile like {name:xxx, name: xxx}
     return request.put("/api/v6/users/myself", profile);
 }

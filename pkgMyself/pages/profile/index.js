@@ -98,7 +98,8 @@ Page({
         var _this = this
         var data = this.data.userInfo
         userApi.updateUserProfile(data).then((resp) => {
-            if (resp.data.status == 0) {
+            console.log('updateUserProfile:', resp)
+            if (resp.data.data == true) {
                 wx.showToast({
                     icon: 'none', title: '个人资料修改成功'
                 })
