@@ -19,5 +19,6 @@ export function updateUserProfile (profile) {
 
 // 拉取当前账号的基本信息  完成
 export function getMyselfInfo () {
-    return request.get("/api/v6/users/myself");
+    return request.get("/admin-api/system/user/profile/get");
+    // return request.get("/api/v6/users/myself");
 }

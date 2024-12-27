@@ -119,14 +119,16 @@ Page({
                 primaryColor: color.primary,
             })
         })
-
+        console.log("wx.login onShow:----")
         wx.login({
             success: function (res) {
+                console.log("wx.login success:",res)
                 _this.setData({
                     code: res.code 
                 })
             },
             complete: function (res) {
+                console.log("wx.login complete:",res)
                 // 用户拒绝,跳转到设置界面
                 if (res.errMsg == 'getUserInfo:fail auth deny') {
                     wx.openSetting({})

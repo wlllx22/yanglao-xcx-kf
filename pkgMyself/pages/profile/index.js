@@ -146,6 +146,7 @@ Page({
         this.setData({ loading: true })
         var _this = this
         auth.setUserInfo(function (user) {
+            console.log('user:', user)
             _this.setData({ userInfo: user, loading: false })
             _this.loadTags()
         })

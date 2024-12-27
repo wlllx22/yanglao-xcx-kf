@@ -15,7 +15,7 @@
     <style3 items="{{items}}" />
 </template>
 
-<header title="二手房列表" subtitle="查看更多" link="{{morelink}}" ></header>
+<header title="家政员列表" subtitle="查看更多" link="{{morelink}}" ></header>
 <view class="posts-items">
 
   <template is="style-3" data="{{items:items}}"></template>

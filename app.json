@@ -199,7 +199,7 @@
     "pages/messages/systemMesShow/index",
     "pages/error-message/index"
   ],
-  "requiredPrivateInfos": [
+  "testrequiredPrivateInfos": [
     "choosePoi",
     "chooseAddress",
     "chooseLocation",

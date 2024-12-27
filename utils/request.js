@@ -12,8 +12,8 @@
 const app = getApp()
 // 请修改为您自己的服务端地址，服务端安装请参考文档：http://doc.youdeyunke.com/zhunbei.html
 // const apiHost = 'https://demo2.youdeyunke.com';
- const apiHost = "http://192.168.1.111:8080"
-
+//  const apiHost = "http://192.168.1.111:8080"
+ const apiHost = "http://192.168.1.111:48080"
 const throttle = require('./throttle');
 
 // 发送http请求
@@ -23,6 +23,7 @@ const http = ({
     ...other
 } = {}) => {
     var header = {
+        'tenant-id': '1',
         'content-type': 'application/json',
     }
     if (!header["Content-Type"]) {
