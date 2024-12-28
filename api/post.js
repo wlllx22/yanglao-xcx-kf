@@ -14,7 +14,13 @@ let request = require('../utils/request.js');
 
 // 拉取家政员列表 
 export function getPostList (data) {
-    return request.get("/admin-api/jz/serve-provider/page?pageNo="+data.page+"&pageSize=10", data);
+    var pageSize =10  
+    if(data.per_page){
+        pageSize =data.per_page
+    }
+    console.log("getPostList:data.pageSize-",pageSize,data.per_page)
+    return request.get("/admin-api/jz/serve-provider/page?pageNo="+data.page+"&pageSize="+pageSize+"", data);
+    return request.get("/admin-api/jz/serve-provider/page?pageNo="+data.page+"&pageSize=", data);
     return request.get("/api/v6/posts/", data);
 }
 

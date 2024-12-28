@@ -63,7 +63,7 @@ Component({
       postApi.getPostList(query).then((resp)=>{
         console.log("3.getPostList:",resp)
         _this.setData({loading: false })
-        var res = resp.data.data;
+        var res = resp.data.data.list;
         var items = _this.data.items 
         if(res.length > 0){
           items = items.concat(res)

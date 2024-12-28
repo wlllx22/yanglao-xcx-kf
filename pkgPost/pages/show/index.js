@@ -254,7 +254,7 @@ Page({
             //data.broker = resp.data.broker
             //_this._setPostInfo(resp.data.post)
 
-
+            _this.getVanTabs(['信息', '户型'])
             // _this.getVanTabs(resp.data.data)
             _this.setData(data, () => {
                 wx.showShareMenu({

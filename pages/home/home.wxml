@@ -17,11 +17,11 @@
 <btns btns="{{btns}}"></btns>
 <follow></follow>
 <notice ids="{{[1,2,3]}}"></notice>
-<brokers ids="{{[1,2,3]}}"></brokers>
-
 <post></post>
+<!--<brokers ids="{{[1,2,3]}}"></brokers>
+
 <zhaofang></zhaofang>
-<house></house>
+ <house></house>-->
 <videos></videos>
 <news-list></news-list>
 

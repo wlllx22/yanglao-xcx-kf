@@ -62,7 +62,7 @@
 
 
 <view style="position: absolute;top: 0;" class="outer" hidden="{{loading}}">
-    <banners-block color="{{configs.color.primary}}" value="{{bannersInfo}}"></banners-block>
+    <!--  <banners-block color="{{configs.color.primary}}" value="{{bannersInfo}}"></banners-block> -->
     <cover-block value="{{postInfo}}" color="{{configs.color.primary}}" />
     <view style="position: absolute;top: 690rpx;width: 750rpx;">
         <header-block navs="{{navs}}" post="{{postInfo}}" color="{{configs.color.primary}}" />
