@@ -156,7 +156,7 @@ Page({
             per_page: 10
         }
         postApi.getPostList(query).then((resp) => {
-            // console.log("2333", resp);
+            console.log("5.getPostList:",resp)
             if (resp.data.code != 0) {
                 return
             }

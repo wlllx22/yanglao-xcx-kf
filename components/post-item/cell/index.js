@@ -64,6 +64,11 @@ Component({
      * 组件的方法列表
      */
     methods: {
+         getSplit:function(tag){
+            console.log("tag:",tag)
+            var a = tag.split(",");
+            return a;
+          }
 
     }
 })

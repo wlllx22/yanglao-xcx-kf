@@ -1,5 +1,4 @@
-<!--
- +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+<!-- +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
  | 容易养老  - 开启家政营销新纪元
  +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  | Copyright (c) 2024 容易科技技术支持
@@ -7,48 +6,53 @@
  | 2024
  +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  | Author: www.test.com
- +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
--->
+ +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- components/pagemaker/posts/post-item0.wxml -->
+<wxs module="fn">
+
+  module.exports={
+
+ split:function(str){
+
+  return str.split(',');
+
+ }
+
+  }
+
+</wxs>
 <view class="outer">
     <navigator hover-class="none" class="post" url="{{url }}">
         <post-cover wx:if="{{post}}" height="180" width="240" item="{{post}}"></post-cover>
         <view class="right">
-            <view class="title">
-                {{post.title}}
-            </view>
+            <view class="title">{{post.name}}</view>
             <view class="address">{{post.address}}</view>
             <view class="price">
-                <text class="red">{{post.average_price_info.text}} <text style="font-size: 22rpx;">{{post.average_price_info.px}}</text></text>
+                <text class="red">
+                    {{post.phone}}
+                    <text style="font-size: 22rpx;">{{post.average_price_info.px}}</text>
+                </text>
             </view>
-            
-            <view class="tags">
+            <view class="tags"> 
                 <!-- <van-tag text-color="#ffffff"  color="{{post.sale_status_item.color}}" size="mini">{{post.sale_status_item.name}}
                 </van-tag> -->
                 <!-- <van-tag color="#F4F5FA" text-color="#6A7B8B" size="mini" wx:for="{{post.tags}}" wx:key="item.id"
                     wx:if="{{index<=1}}">{{item.name}}</van-tag> -->
-                <view wx:for="{{post.tags}}" wx:if="{{index<=1}}" wx:key="item.id" class="tag" >
-                  {{item.name}}
+                <!-- <view wx:for="{{post.tags}}" wx:if="{{index<=1}}" wx:key="item.id" class="tag" > -->
+                <view wx:for="{{fn.split(post.kind)}}" wx:if="{{index<=1}}" wx:key="item" class="tag">
+                    {{item}}
                 </view>
             </view>
-
             <!-- <view class="point {{ point.cat}}" wx:for="{{post.points_info}}" wx:for-item="point">
                 <text class="ptitle">{{ point.title || '项目亮点' }} </text>
                 <view class="blank"></view>
                 <text class="content">{{ point.content }}</text>
             </view> -->
-
             <view class="point default" wx:if="{{ post.point_title }}">
                 <text class="ptitle">{{point.title}}</text>
                 <view class="blank"></view>
                 <text class="content">{{ point.content }}</text>
             </view>
-
         </view>
-
     </navigator>
-
-
-
-
 </view>

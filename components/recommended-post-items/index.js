@@ -64,7 +64,8 @@ Component({
         data.per_page = this.data.showPostCount + 1
       }
       postApi.getPostList(data).then((resp) => {
-        var postItems = resp.data.data.result
+        console.log("1.getPostList:",resp)
+        var postItems = resp.data.data
         /** 
          * 如果currentPostId有值，对返回的数据进行处理，如果postItems中有id等于currentPostId的数据，则删除该条数据
          * 如果没有值，则随机选择10条数据

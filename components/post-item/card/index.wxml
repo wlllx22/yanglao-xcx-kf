@@ -27,7 +27,7 @@
     </view> -->
     <post-cover height="400" width="100%" wx:if="{{post}}" item="{{post}}"></post-cover>
     <view class="footer">
-        <view class="title">{{post.title}}</view>
+        <view class="title">{{post.name}}</view>
         <view class="top">
             <view class="tags">
                 <view wx:for="{{post.tags}}" style="zoom: 0.8;margin-right: 10rpx;" >
@@ -37,7 +37,7 @@
                 </view>
             </view>
             <view class="price">
-                <view class="left">{{post.average_price_info.label}}:</view>
+                <view class="left">{{post.phone}}:</view>
                 <view class="right">{{post.average_price_info.text}}{{post.average_price_info.px}}</view>
             </view>
         </view>

@@ -67,24 +67,26 @@ Component({
             _this.setData({ loading: true })
             var query = this.data.query
             postApi.getPostList(query).then((resp) => {
-                var meta = resp.data.data.page
+                console.log("2.getPostList:",resp)
+                var total = resp.data.data.total
                 var p = _this.data.query.page || 1
                 var i = p - 1
-                var data = { meta: meta }
+                var data = { total: total }
                 if (p > 1) {
                     var key = 'items[' + i + ']'
-                    data[key] = resp.data.data.result
+                    data[key] = resp.data.data.list
                 } else {
-                    data['items'] = [resp.data.data.result]
+                    data['items'] = [resp.data.data.list]
                 }
+                console.log("2.getPostList data:",data)
                 _this.setData(data)
                 _this.setData({
                   loading: false
                 })
 
 
-                for (var i = 0; i <= resp.data.data.result.length - 1; i++) {
-                    var post = resp.data.data.result[i]
+                for (var i = 0; i <= resp.data.data.list.length - 1; i++) {
+                    var post = resp.data.data.list[i]
                     wx.setStorage({
                         key: 'post.' + post.id,
                         data: post,

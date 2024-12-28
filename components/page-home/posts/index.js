@@ -61,8 +61,9 @@ Component({
       query.per_page = this.data.perPage
 
       postApi.getPostList(query).then((resp)=>{
+        console.log("3.getPostList:",resp)
         _this.setData({loading: false })
-        var res = resp.data.data.result;
+        var res = resp.data.data;
         var items = _this.data.items 
         if(res.length > 0){
           items = items.concat(res)

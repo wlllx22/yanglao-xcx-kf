@@ -27,7 +27,7 @@
     </view> -->
     <post-cover height="246" width="100%" topRightRadius="16" topLeftRadius="16" bottomRightRadius='0' bottomLeftRadius='0' wx:if="{{post}}" item="{{post}}"></post-cover>
     <view class="footer">
-        <view class="title">{{post.title}}</view>
+        <view class="title">{{post.name}}</view>
         <view class="top">
             <view class="tags">
                 <view wx:if="{{index <= 1}}" wx:for="{{post.tags}}" wx:key="item.id" class="tag-item">
@@ -40,7 +40,7 @@
                 {{ post.area_info.label}} {{ post.area_info.text}}
             </view>
             <view class="price">
-                {{post.average_price_info.text}}{{post.average_price_info.px}}
+                {{post.phone}}{{post.average_price_info.px}}
             </view>
         </view>
     </view>

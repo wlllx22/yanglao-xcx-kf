@@ -273,7 +273,7 @@ Page({
       }
       var post = resp.data.data
       wx.setNavigationBarTitle({
-        title: resp.data.data.title + '预约看房',
+        title: resp.data.data.title + '预约面试',
       })
       _this.setData({
           post: post
@@ -407,14 +407,14 @@ Page({
   onShareAppMessage() {
     var _this = this
     return {
-      title: _this.data.post.title + "预约看房",
+      title: _this.data.post.title + "预约面试",
       path: '/pkgBooking/pages/booking/index?pid=' + _this.data.postId
     }
   },
   onShareTimeline(){
     var _this = this
     return {
-      title: _this.data.post.title + "预约看房",
+      title: _this.data.post.title + "预约面试",
       query: 'pid=' + _this.data.postId
     }
   }

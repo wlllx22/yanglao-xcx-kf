@@ -62,16 +62,16 @@ Component({
         favChangeHandle: function (e) {
             console.log('fav change 222', e)
             var s = e.detail.status
-            var name = "收藏了楼盘:"
+            var name = "收藏了:"
             if (s == 0) {
-                name = "取消收藏楼盘:"
+                name = "取消收藏:"
             }
 
         },
 
         shareHandle: function () {
-            console.log("niiiiiiiii", this.properties.post.id)
             this.setData({ showShareBox: true })
+            console.log("niiiiiiiii", this.properties.post?.id)
         },
         phoneHandle: function () {
             // console.log("data:",this.data.post.sub_phone);

@@ -10,15 +10,12 @@
  +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -->
 <view class="outer">
-  <view class="empty" wx:if="{{meta.total_items == 0 }}" style="text-align:center;color:#cecece;">没有结果</view>
-  <block wx:key="{{index}}" wx:for="{{items}}" wx:for-item="posts">
-
-    <view class="post-item"  wx:key="{{post.id}}" wx:for="{{posts}}" wx:for-item="post">
+  <view class="empty" wx:if="{{total == 0 }}" style="text-align:center;color:#cecece;">没有结果</view>
+  <block wx:key="index" wx:for="{{items}}" wx:for-item="posts"> 
+    <view class="post-item"  wx:key="id" wx:for="{{posts}}" wx:for-item="post">
       <item  post="{{post}}" />
       <view class="border"></view>
-    </view>
-
-
+    </view> 
   </block>
   <view class="loading">
     <van-loading wx:if="{{loading}}" />

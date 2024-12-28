@@ -57,6 +57,7 @@ Component({
                 order: 'id desc',
                 id_ne: _this.data.idNe || 0,
             }).then((resp) => {
+                console.log("4.getPostList:",resp)
                 var posts = resp.data.data
                 _this.setData({ posts: posts })
                 app.cachePosts(posts)

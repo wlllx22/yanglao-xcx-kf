@@ -253,7 +253,9 @@ Page({
             //data.bannersInfo = resp.data.banners
             //data.broker = resp.data.broker
             //_this._setPostInfo(resp.data.post)
-            _this.getVanTabs(resp.data.data)
+
+
+            // _this.getVanTabs(resp.data.data)
             _this.setData(data, () => {
                 wx.showShareMenu({
                     withShareTicket: true,
@@ -262,13 +264,13 @@ Page({
             })
         }).catch((res) => {
             wx.showToast({
-                title: '楼盘页面渲染错误',
+                title: '页面渲染错误',
                 icon: 'error',
                 image: '',
                 duration: 1500,
                 mask: true,
             });
-            console.error(res);
+            console.error("页面渲染错误:",res);
 
         })
     },
@@ -457,10 +459,10 @@ Page({
     _setPostInfo: function (post, cb) {
         var data = {}
         data.postInfo = post
-        data.pageTitle = post.title
-        data.pageCover = post.cover
+        data.pageTitle = post.name
+        data.pageCover = post.avatar
         // console.log('set post info', post)
-        wx.setNavigationBarTitle({ title: post.title, })
+        wx.setNavigationBarTitle({ title: post.name, })
         this.setData(data, () => {
             typeof cb == 'function' && cb(post)
         })
