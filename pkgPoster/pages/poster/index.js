@@ -16,9 +16,9 @@ const posterApi = require('../../../api/poster')
 
 var title = {
     type: 'text',
-    text: "楼盘海报",
+    text: "家政员海报",
     css: {
-        width: '300rpx',
+        width: '380rpx',
         height: '80rpx',
         fontSize: "60rpx",
         top: "97rpx",
@@ -29,7 +29,7 @@ var title = {
 }
 var subTitle = {
     type: 'text',
-    text: "足不出户在线看新房",
+    text: "在线挑选家政员",
     css: {
         width: '300rpx',
         height: '40rpx',
@@ -96,7 +96,7 @@ var address = {
 }
 var jianmian = {
     type: 'text',
-    text: '建面',
+    text: '经验',
     css: {
         width: '68rpx',
         height: '32rpx',
@@ -120,7 +120,7 @@ var jianmianData = {
 }
 var junjia = {
     type: 'text',
-    text: '均价',
+    text: '月薪',
     css: {
         width: '68rpx',
         height: '32rpx',
@@ -145,7 +145,7 @@ var junjiaData = {
 }
 var zhuangxiu = {
     type: 'text',
-    text: '装修',
+    text: '教育',
     css: {
         width: '68rpx',
         height: '32rpx',
@@ -241,8 +241,135 @@ Page({
             bg: 'https://tcdn.udeve.net/poster-templates/6.jpg',
             font_color: '#fff'
         }]
-        posterApi.gettPosterList().then((resp) => {
-            if (resp.data.status == 0) {
+    
+var resp = {
+    code: 0,
+    message: "操作成功",
+    data: [
+        {
+            id: 1,
+            name: "纸纹",
+            is_default: false,
+            bg: "",
+            font_color: "#333333",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 12
+        },
+        {
+            id: 2,
+            name: "炫彩",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 13
+        },
+        {
+            id: 3,
+            name: "炫蓝",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 14
+        },
+        {
+            id: 4,
+            name: "活力",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 15
+        },
+        {
+            id: 5,
+            name: "纷飞",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 16
+        },
+        {
+            id: 6,
+            name: "祥云",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 17
+        },
+        {
+            id: 7,
+            name: "炫紫",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 18
+        },
+        {
+            id: 8,
+            name: "波纹",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 19
+        },
+        {
+            id: 9,
+            name: "3D绿",
+            is_default: false,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 20
+        },
+        {
+            id: 10,
+            name: "炫绿",
+            is_default: true,
+            bg: "",
+            font_color: "#ffffff",
+            cover: null,
+            can_delete: false,
+            created_at: "2024-05-31 14:35:04",
+            updated_at: "2024-05-31 14:35:04",
+            number: 21
+        }
+    ],
+    status: 0
+}; 
+          if (resp.data.status == 0) {
                 // 后端没有录入数据
                 if (resp.data.data && resp.data.data.length > 0) {
                     tpls = resp.data.data
@@ -252,7 +379,19 @@ Page({
                 // 服务器版本不够，降级处理
                 return typeof cb == 'function' && cb(tpls)
             }
-        })
+
+        // posterApi.gettPosterList().then((resp) => {
+        //     if (resp.data.status == 0) {
+        //         // 后端没有录入数据
+        //         if (resp.data.data && resp.data.data.length > 0) {
+        //             tpls = resp.data.data
+        //         }
+        //         return typeof cb == 'function' && cb(tpls)
+        //     } else {
+        //         // 服务器版本不够，降级处理
+        //         return typeof cb == 'function' && cb(tpls)
+        //     }
+        // })
     },
 
     loadPost: function (postId, cb) {
@@ -304,7 +443,7 @@ Page({
     },
 
     genQr: function (uinfo, cb) {
-        // 根据数据生成房源的二维码信息
+        // 根据数据生家政员的二维码信息
         // 如果是普通股用户，就直接返回默认二维码 
         if (!uinfo) {
             return cb(null)
@@ -332,8 +471,8 @@ Page({
 
     showTips: function () {
         wx.showModal({
-            title: '房源海报有什么用途?',
-            content: '可发布到朋友圈、微信聊天群等，好友长按识别即可打开房源页面',
+            title: '家政员海报有什么用途?',
+            content: '可发布到朋友圈、微信聊天群等，好友长按识别即可打开家政员页面',
             confirmText: '知道了',
             success (res) { }
         })
@@ -346,18 +485,18 @@ Page({
 
         var qrUrl = this.data.qrUrl
         var tpl = this.data.tpls[this.data.tplIndex]
-        if (post.average_price) {
-            var averagePrice = post.average_price
+        if (post.price) {
+            var averagePrice = post.price
         }
         var bgImage = tpl.bg
 
         var userInfo = app.globalData.userInfo
         var fontColor = tpl.font_color || '#ffffff'
-        if (post.cover) {
-            postCover.url = post.cover
+        if (post.avatar) {
+            postCover.url = post.avatar
         }
-        if (post.title) {
-            postTitle.text = post.title
+        if (post.name) {
+            postTitle.text = post.name
         }
         if (post.address) {
             address.text = '地址：' + post.address
@@ -365,7 +504,7 @@ Page({
         if (post.fitment) {
             zhuangxiuData.text = post.fitment
         }
-        if (post.area_info.text && post.area_info.px) {
+        if (post.area_info?.text && post.area_info?.px) {
             jianmianData.text = post.area_info.text + post.area_info.px
             junjiaData.text = averagePrice + post.average_price_info.px
         }
@@ -465,11 +604,11 @@ Page({
 
     genTags () {
         var post = this.data.post
-        var haibaoTags = post.tags.filter((q, i) => i < 3).map((q, i) => {
+        var haibaoTags = post.kind?.split(',').filter((q, i) => i < 3).map((q, i) => {
             var tag = {
                 type: 'text',
                 id: 'tag' + (i + 1),
-                text: ' ' + q.name + ' ',
+                text: ' ' + q + ' ',
                 css: {
                     height: '36rpx',
                     lineHeight: '30rpx',
@@ -487,7 +626,7 @@ Page({
             }
             return tag
         })
-        return haibaoTags
+        return haibaoTags??[]
     },
 
     onImgOK (e) {

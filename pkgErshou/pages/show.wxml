@@ -26,7 +26,7 @@
     <view style="display: flex;">
       <view class="fuzeren">
         <image class="fuzerenImg" src="https://tcdn.udeve.net/fang2021/a6eb9ded-760d-470a-ad64-acfdba186831.png" mode="" />
-        房源已审核
+        家政员已审核
       </view>
       <view class="fuzeren" style="margin-left: 50rpx;">
         <image class="fuzerenImg" src="https://tcdn.udeve.net/fang2021/b1f98257-2189-4116-a962-664a8f7ea68b.png" mode="" />
@@ -106,7 +106,7 @@
     <view class="jingpaiBoxL">
       <image class="jpImgL" src="https://tcdn.udeve.net/fang2021/c6147555-908c-4234-8d6e-8ae38cda033f.png" mode="" />
       <view class="jpText">
-        房源介绍
+        家政员介绍
       </view>
     </view>
 

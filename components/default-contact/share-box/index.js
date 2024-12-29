@@ -25,10 +25,10 @@ Component({
             if (!p) {
                 return
             }
-            var tags = p.tags.map((t, i) => {
+            var kinds = p.kind.map((t, i) => {
                 return t.name
             })
-            this.setData({ tags: tags })
+            this.setData({ kinds: kinds })
         },
     },
 
@@ -38,7 +38,7 @@ Component({
     data: {
         showTips: false,
         showCopy: false,
-        tags: [],
+        kinds: [],
 
     },
 
@@ -58,24 +58,27 @@ Component({
         },
 
         copyHandle: function () {
+            console.log('copyHandle this.data:', this.data)
             // 复制到剪贴板
             var p = this.data.postInfo
             var text = ""
-            var tags = this.data.tags.join(',')
-            text += "【项目名称】" + p.title
-            text += "\n【参考均价】" + p.average_price
-            text += "\n【项目亮点】" + tags
-            text += "\n【项目地址】" + p.address
+           // var kinds = this.data.kind.join(',')
+           var kinds = this.data.kind?this.data.kind:''
+            text += "【名称】" + p.name
+            // text += "\n【月薪】" + p.average_price
+            text += "\n【工种】" + kinds
+            // text += "\n【地址】" + p.address
             // TODO 联系电话服务端还没完成
             var phone = p.phone
             if (p.sub_phone && p.sub_phone.length >= 1) {
                 phone += '转' + p.sub_phone
             }
-            text += "\n【咨询热线】" + phone
+            text += "\n【咨询】" + phone
             wx.setClipboardData({
                 data: text,
             });
             this.setData({ showCopy: true, show: false })
+            console.log('copyHandle copy text:', text)
 
         },
 

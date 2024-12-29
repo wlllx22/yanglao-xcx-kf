@@ -55,23 +55,23 @@
             <view class="body">
                 <view class="postinfo">
                     <view class="info">
-                        <view class="label">项目名称</view>
-                        <view clss="text">{{postInfo.title}}</view>
+                        <view class="label">姓名</view>
+                        <view clss="text">{{postInfo.name}}</view>
                     </view>
                     <view class="info">
-                        <view class="label">参考均价</view>
-                        <view clss="text">{{postInfo.average_price}}</view>
+                        <view class="label">月薪</view>
+                        <view clss="text">{{postInfo.price}}</view>
                     </view>
                     <view class="info">
-                        <view class="label">项目亮点</view>
-                        <view clss="text">{{tags}}</view>
+                        <view class="label">工种</view>
+                        <view clss="text">{{kinds}}</view>
                     </view>
                     <view class="info">
-                        <view class="label">项目地址</view>
+                        <view class="label">地址</view>
                         <view clss="text">{{postInfo.address}}</view>
                     </view>
                     <view class="info">
-                        <view class="label">咨询热线</view>
+                        <view class="label">联系</view>
                         <view clss="text">
                             {{postInfo.phone}}{{postInfo.sub_phone ? postInfo.sub_phone : ''}}
                         </view>

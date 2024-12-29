@@ -108,7 +108,7 @@ Page({
 
 
   renderPost: function (pid) {
-      // 显示所选房源
+      // 显示所选家政员
       var _this = this
       //  √
       houseApi.getHouseBlocks(pid).then((resp) => {
@@ -306,7 +306,7 @@ Page({
               nextLevel = 'post'
               break;
           case 'house':
-              // 房源被点击
+              // 家政员被点击
               // 改变被点击的marker的背景颜色
               this.markerColorHandle(markerId)
               this.setData({

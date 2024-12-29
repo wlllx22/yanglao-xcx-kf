@@ -15,7 +15,7 @@ const app = getApp()
 Component({
     /**
      * 组件的属性列表
-     * 根据filter传递的参数，自动调用对应房源的filter
+     * 根据filter传递的参数，自动调用对应家政员的filter
      */
 
     properties: {
@@ -40,7 +40,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        postGroup: 'new', // 房源的类型
+        postGroup: 'new', // 家政员的类型
         filterOptions: {}, // 筛选下拉框
     },
 

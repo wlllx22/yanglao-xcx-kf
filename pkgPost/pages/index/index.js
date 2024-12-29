@@ -52,7 +52,7 @@ Page({
         if (!fkeys.includes('city_id')) {
             filter.city_id = app.globalData.cityId
         }
-        // 如果是加载主题房源列表
+        // 如果是加载主题家政员列表
         if (q.album_id) {
             filter.album_id = q.album_id
             data.albumId = q.album_id

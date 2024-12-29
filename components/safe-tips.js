@@ -30,7 +30,7 @@ Component({
                 desc: '',
             },
             old: {
-                title: '本平台承诺真实房源假一赔百元!',
+                title: '本平台承诺家政信息真实!',
                 desc: '',
             },
             rental: {

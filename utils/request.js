@@ -12,7 +12,7 @@
 const app = getApp()
 // 请修改为您自己的服务端地址 
   const apiHost = 'https://yl-xcx.s2g2b2c.com'; 
- //const apiHost = "http://192.168.1.111:48080"
+//  const apiHost = "http://192.168.1.111:48080"
 const throttle = require('./throttle');
 
 // 发送http请求

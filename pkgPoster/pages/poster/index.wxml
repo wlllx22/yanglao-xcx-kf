@@ -15,7 +15,7 @@
     <image style="margin-top:30rpx;width:690rpx;height:1426rpx;" mode="modeFix" bindtap='previewPoster' wx:if="{{imagePath}}" src="{{imagePath}}"></image>
     <view class="tips" bindtap="showTips">
         <van-icon name="question-o" />
-        <text>房源海报有什么用途？</text>
+        <text>家政员海报有什么用途？</text>
     </view>
     <view class="bar">
         <view class="tools">

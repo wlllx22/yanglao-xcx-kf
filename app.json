@@ -291,7 +291,7 @@
   "serviceProviderTicket": "",
   "permission": {
     "scope.userLocation": {
-      "desc": "位置信息用于房源查询"
+      "desc": "位置信息用于家政员查询"
     }
   },
   "plugins": {},
