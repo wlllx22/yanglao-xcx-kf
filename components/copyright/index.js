@@ -11,7 +11,7 @@
 */
 
 // components/copyright.js
-// 本项目已进行软件著作权登记，社区版必须保留此版权信息，否则构成侵权。若需移除，请购买专业版。
+
 
 const app = getApp()
 

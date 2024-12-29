@@ -56,7 +56,7 @@ Page({
             title: '消息'
         })
 
-        var color = app.globalData.color
+        var color = app.globalData.myconfigs.color
         this.setData({
             primaryColor: color.primary || '#9e1d1d',
         })

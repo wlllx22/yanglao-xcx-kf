@@ -32,12 +32,13 @@ App({
             },  
             text_banner: {
                 title: '欢迎使用',
-                content: '欢迎使用'
+                content: '欢迎使用容易管理小程序'
             },
         },
         ui: {},
         color: {
-            primary: '#1989fa'//浅蓝色
+            // primary: '#1989fa'//浅蓝色
+            primary: '#968dea'//紫蓝色
         },
         visitorId: null, // 访客行为uid
         reddotIntervalId: null,
