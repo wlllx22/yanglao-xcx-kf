@@ -225,6 +225,7 @@ App({
               }
           },
           fail: function (err) {
+            console.log("订阅消息请求失败",err)
               wx.showToast({
                   title: '订阅消息请求失败',
                   icon: 'none',
