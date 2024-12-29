@@ -25,6 +25,7 @@ App({
         EXT: EXT,
         myconfigs: {
             xcx_name:"容易管理",
+            msg_tpl_id:"7H3tJ9B6qqth0GUeH2KrmlBYha3Ap2S5_I1_35s4cHs",
             color: {
                 primary_btn: '#1d5de2',//深蓝色
                 primary: '#968dea',//紫蓝色

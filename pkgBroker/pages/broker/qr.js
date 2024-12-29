@@ -397,7 +397,7 @@ Page({
         console.log('99999', userInfo)
         if (userInfo == null || userInfo.post_id == null || userInfo.post_id == '' || userInfo.post_id == undefined) {
             wx.showModal({
-                content: '未绑定主营楼盘，无法生成海报',
+                content: '未绑定所在地区，无法生成海报',
                 showCancel: false,
                 success (res) {
                     wx.navigateBack({
