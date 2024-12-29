@@ -31,7 +31,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        text: "优得（西安）信息科技有限公司 版权所有"
+        text: "容易科技 技术支持"
     },
 
     /**
@@ -41,7 +41,7 @@ Component({
 
       showToast(){
         wx.showToast({
-          title: '©容易养老版权所有',
+          title: '©容易养老技术支持',
           icon: 'none',
         })
       },
@@ -49,7 +49,7 @@ Component({
         sayHello: function () {
             wx.showToast({
                 icon: 'none',
-                title: '优得:www.udeve.net',
+                title: '容易:www.test.com',
             })
         }
     }
