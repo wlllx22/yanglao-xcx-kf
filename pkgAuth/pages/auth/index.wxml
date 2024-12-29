@@ -10,14 +10,14 @@
  +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -->
 <view class="auth" wx:if="{{!userInfo}}">
-    <view class="header" style="background-image:url('https://tcdn.udeve.net/fang/login-header.png')">
+    <view class="header" style="background-image:url('http://7n2.zerone.club/yl/login-header.png')">
     </view>
 
-    <view class="body" style="background-image:url('https://tcdn.udeve.net/fang/login-body.png')">
+    <view class="body" style="background-image:url('http://7n2.zerone.club/yl/login-body.png')">
     </view>
 
     <view class="footer">
-        <van-button color="{{primaryBtnColor}}" style="width:100%;font-size:32rpx;" block icon="wechat" loading="{{loading}}"
+        <van-button color="{{primaryBtnColor}}" style="width:100%;font-size:36rpx;" block icon="wechat" loading="{{loading}}"
             disabled="{{loading}}"  open-type='getPhoneNumber' bindgetphonenumber='loginHandle' wx:if="{{!is_wxwork}}">
             微信登录
         </van-button>

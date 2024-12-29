@@ -14,6 +14,6 @@
 
 <block>
   <view class="logo-box">
-    <image class="logo-img" bindtap="showToast" src="https://tcdn.udeve.net/udyk/65ae2b4db33ac5e0e29f7ccf.png" mode="widthFix"/>
+    <image class="logo-img" bindtap="showToast" src="http://7n2.zerone.club/yl/65ae2b4db33ac5e0e29f7ccf.png" mode="widthFix"/>
   </view>
 </block>

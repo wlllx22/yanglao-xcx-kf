@@ -26,8 +26,9 @@ App({
         myconfigs: {
             xcx_name:"容易管理",
             color: {
-                primary_btn: '#1d5de2',
-                primary: '#968dea'
+                primary_btn: '#1d5de2',//深蓝色
+                primary: '#968dea',//紫蓝色
+                secondary_btn:'#ff8c00',//金黄色
             },  
             text_banner: {
                 title: '欢迎使用',

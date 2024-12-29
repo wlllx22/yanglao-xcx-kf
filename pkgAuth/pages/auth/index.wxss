@@ -61,7 +61,7 @@ page {
 
 
 .terms{
-    font-size: 24rpx;
+    font-size: 28rpx;
     margin-left: 10rpx;
     display: flex;
     color:#333333;

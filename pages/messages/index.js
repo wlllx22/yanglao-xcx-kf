@@ -221,6 +221,13 @@ Page({
      */
     onShow: function () {
         var _this = this 
+        var color = app.globalData.myconfigs.color
+        this.setData({
+            primaryBtnColor: color.primary_btn,
+            secondaryBtnColor: color.secondary_btn,
+            primaryColor: color.primary, 
+        })
+        
         wx.removeTabBarBadge({
             index: 2,
             fail: function (res) {
