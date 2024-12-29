@@ -24,6 +24,7 @@ App({
         cityId: null, // 全局城市过滤
         EXT: EXT,
         myconfigs: {
+            xcx_name:"容易管理",
             color: {
                 primary_btn: '#1d5de2',
                 primary: '#968dea'

@@ -13,7 +13,7 @@
 <view class="header" style=" background-color: {{color}};">
   <navigator open-type="navigateBack" hover-class="none" class="post-title">
     {{post.title}}
-    <van-icon name="arrow" />
+    <!-- <van-icon name="arrow" /> -->
   </navigator>
   <navigator url="/pkgMyself/pages/booking/index" class="my-appointment">
     我的预约
