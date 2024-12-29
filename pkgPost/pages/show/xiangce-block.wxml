@@ -11,7 +11,7 @@
 -->
 <!--pkgPost/pages/show/xiangce-block.wxml-->
 <block>
-    <block-box width="750" leftHat="true" leftHatColor="{{color}}" title="楼盘相册">
+    <block-box width="750" leftHat="true" leftHatColor="{{color}}" title="个人相册">
         <view class="items-outer">
             <view class="xiangce-item" wx:for="{{value.items}}" bindtap="itemClick" data-i="{{index}}" >
                 <image class="xiangce-item-cover" wx:if="{{item.cat != 'video'}}" src="{{item.cover}}"></image>

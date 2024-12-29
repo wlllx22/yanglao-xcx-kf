@@ -10,7 +10,7 @@
  +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -->
 <block>
-  <block-box hat="{{false}}"   leftHat="true" leftHatColor="{{color}}" width="750" title-size="36" title="户型介绍" url="{{value.more_url}}" sub-title="{{value.more_title}}">
+  <block-box hat="{{false}}"   leftHat="true" leftHatColor="{{color}}" width="750" title-size="36" title="自我介绍" url="{{value.more_url}}" sub-title="{{value.more_title}}">
     <scroll-view scroll-with-animation="{{true}}" scroll-x style="width:100%;white-space: nowrap;">
       <view class="types" wx:for="{{items}}" wx:key="id">
         <navigator hover-class="none" class="type">

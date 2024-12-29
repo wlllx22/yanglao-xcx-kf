@@ -10,7 +10,7 @@
  +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -->
 <!--pkgPost/pages/show/points_block.wxml-->
-<block-box title-size="36" leftHat="true" leftHatColor="{{color}}" title="楼盘亮点" padding="{{false}}" >
+<block-box title-size="36" leftHat="true" leftHatColor="{{color}}" title="评分亮点" padding="{{false}}" >
 
     <scroll-view scroll-with-animation="{{true}}" scroll-into-view="{{currentId}}" scroll-x="true" class="nav" >
         <view wx:for="{{value.items}}" bindtap="navChange" data-i="{{index}}" id="icon-{{index}}" class="icon">

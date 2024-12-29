@@ -27,16 +27,20 @@ Component({
 
   observers: {
     "pid": function (pid) {
+
+      
       if (!pid) {
         return
       }
-
+      this.properties.pid = pid
       // load broker info 
       var _this = this
       var query = {
         post_id: pid,
         per_page: 999
       }
+      console.log("--------- postApi.getPostBaseInfo3:") 
+      _this.loadPostBaseInfo()
       // TODO get from cache 
       brokerApi.getBrokerList(query).then((resp) => {
         if (resp.data.code != 0) {
@@ -73,6 +77,7 @@ Component({
       if (brokerId) {
         return
       }
+      this.properties.brokerId = bid
       if (!bid) {
         return
       }
@@ -96,7 +101,9 @@ Component({
     loadPostBaseInfo: function () {
       // 加载楼盘的基本信息
       var _this = this;
+      console.log("--------- postApi.getPostBaseInfo1:",this.data) 
       postApi.getPostBaseInfo(this.data.pid).then((resp) => {
+        console.log("---------postApi.getPostBaseInfo2:--------------------",resp) 
         if (resp.data.code != 0) {
           return
         }

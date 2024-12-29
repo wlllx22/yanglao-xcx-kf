@@ -30,10 +30,10 @@
             <view class="price">
                 <text class="red">
                     {{post.phone}}
-                    <text style="font-size: 22rpx;">{{post.average_price_info.px}}</text>
+                    <text style="font-size: 22rpx;">工号:{{post.id}}</text>
                 </text>
             </view>
-            <view class="tags"> 
+            <view class="tags">
                 <!-- <van-tag text-color="#ffffff"  color="{{post.sale_status_item.color}}" size="mini">{{post.sale_status_item.name}}
                 </van-tag> -->
                 <!-- <van-tag color="#F4F5FA" text-color="#6A7B8B" size="mini" wx:for="{{post.tags}}" wx:key="item.id"

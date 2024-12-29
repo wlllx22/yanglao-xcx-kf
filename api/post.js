@@ -18,7 +18,6 @@ export function getPostList (data) {
     if(data.per_page){
         pageSize =data.per_page
     }
-    console.log("getPostList:data.pageSize-",pageSize,data.per_page)
     return request.get("/admin-api/jz/serve-provider/page?pageNo="+data.page+"&pageSize="+pageSize+"", data);
     return request.get("/admin-api/jz/serve-provider/page?pageNo="+data.page+"&pageSize=", data);
     return request.get("/api/v6/posts/", data);

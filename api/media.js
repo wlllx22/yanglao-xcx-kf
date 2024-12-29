@@ -12,7 +12,7 @@
 let request = require('../utils/request.js');
 
 /** 
- * 楼盘相册模块接口
+ * 个人相册模块接口
  * **/
 
 

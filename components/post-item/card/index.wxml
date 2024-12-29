@@ -38,7 +38,7 @@
             </view>
             <view class="price">
                 <view class="left">{{post.phone}}:</view>
-                <view class="right">{{post.average_price_info.text}}{{post.average_price_info.px}}</view>
+                <view class="right">{{post.id}}{{post.average_price_info.px}}</view>
             </view>
         </view>
     </view>

@@ -100,6 +100,7 @@ Page({
     getVanTabs (blocks) {
         var vanTabs = []
         blocks.map((p) => {
+            console.log('vanTabs.push(p.name):', p)
             vanTabs.push(p.name)
         })
         this.setData({
@@ -248,13 +249,26 @@ Page({
                 data.pageQuery += '&broker_uid=' + user.id
             }
             data.loading = false
-            data.blocks = resp.data.data
+            // data.blocks = resp.data.data
+            data.blocks =[
+                {name:'info',label_short:'信息'},
+                {name:'types',label_short:'户型'},
+                {name:'brokers',label_short:'顾问'},
+                {name:'qas',label_short:'问答'},
+                {name:'news',label_short:'资讯'},
+                {name:'events',label_short:'动态'},
+                {name:'tours',label_short:'活动'},
+                {name:'recoms',label_short:'推荐'},
+                {name:'points',label_short:'评分'},
+                {name:'xiangce',label_short:'相册'},
+                {name:'html',label_short:'顾问'},
+            ] 
             //data.navs = resp.data.navs
             //data.bannersInfo = resp.data.banners
             //data.broker = resp.data.broker
             //_this._setPostInfo(resp.data.post)
 
-            _this.getVanTabs(['信息', '户型'])
+            _this.getVanTabs(data.blocks  )
             // _this.getVanTabs(resp.data.data)
             _this.setData(data, () => {
                 wx.showShareMenu({
@@ -296,13 +310,13 @@ Page({
             app.globalData.qrdata = null
         }
 
+        var postId = options.id || options.post_id
         app.ensureConfigs(function (configs) {
           _this.setData({
               configs: configs
           })
         })
 
-        var postId = options.id || options.post_id
 
         _this.createHistory(postId)
         wx.setStorageSync('bindPostId', postId)

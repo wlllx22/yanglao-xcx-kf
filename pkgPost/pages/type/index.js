@@ -63,7 +63,7 @@ Page({
                 data.pageQuery += '&broker_uid=' + user.id
             }
 
-            data.pageTitle = post.title + ' 户型介绍'
+            data.pageTitle = post.title + ' 自我介绍'
             data.pageCover = post.cover
             _this.setData(data)
         })
