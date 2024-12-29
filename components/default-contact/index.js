@@ -71,7 +71,7 @@ Component({
 
         shareHandle: function () {
             this.setData({ showShareBox: true })
-            console.log("niiiiiiiii", this.properties.post?.id)
+            console.log("niiiiiiiii-shareHandle post", this.properties.post)
         },
         phoneHandle: function () {
             // console.log("data:",this.data.post.sub_phone);

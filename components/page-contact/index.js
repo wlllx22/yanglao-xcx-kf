@@ -19,16 +19,16 @@ Component({
    */
   properties: {
     pid: {
-      type: Number,
+      type: String,
       value: null
     },
-    brokerId: {type: Number, value: null},
+    brokerId: {type: String, value: null},
   },
 
   observers: {
     "pid": function (pid) {
 
-      
+      console.log("---------f分享 postApi.getPostBaseInfo3:",pid) 
       if (!pid) {
         return
       }
@@ -39,7 +39,7 @@ Component({
         post_id: pid,
         per_page: 999
       }
-      console.log("--------- postApi.getPostBaseInfo3:") 
+      console.log("--------- postApi.getPostBaseInfo3:",this.properties) 
       _this.loadPostBaseInfo()
       // TODO get from cache 
       brokerApi.getBrokerList(query).then((resp) => {
@@ -72,6 +72,7 @@ Component({
       })
     },
     "brokerId": function (bid) {
+      console.log("---------123分享 postApi.getPostBaseInfo3-bid",bid) 
       var key = 'bindBrokerId'
       var brokerId = wx.getStorageSync(key)
       if (brokerId) {
@@ -101,9 +102,9 @@ Component({
     loadPostBaseInfo: function () {
       // 加载楼盘的基本信息
       var _this = this;
-      console.log("--------- postApi.getPostBaseInfo1:",this.data) 
+      console.log("--------- postApi.getPostBaseInfo1 info:",this.data) 
       postApi.getPostBaseInfo(this.data.pid).then((resp) => {
-        console.log("---------postApi.getPostBaseInfo2:--------------------",resp) 
+        console.log("---------postApi.getPostBaseInfo2:--------------------",this.data,resp) 
         if (resp.data.code != 0) {
           return
         }
