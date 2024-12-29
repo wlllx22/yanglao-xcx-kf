@@ -16,8 +16,8 @@
     'thread': '线索管理',
     'share_customer': '顾问拓客',
     'score': '顾问积分',
-    'event': '楼盘动态',
-    'post_event': '楼盘动态',
+    'event': '家政动态',
+    'post_event': '家政动态',
     'tupai': '土拍动态',
     'broker': '客服顾问',
     'qa': '楼盘问答'

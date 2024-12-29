@@ -23,7 +23,7 @@
             </view>
           </view>
         </view>
-        <view class="profile-wechatqr-text">保存并扫描二维码，进入相关群聊获取更多楼盘信息！</view>
+        <view class="profile-wechatqr-text">保存并扫描二维码，进入相关群聊获取更多信息！</view>
         <view class="profile-wechatqr-save" bindtap="getSaveImage">保存到相册
         </view>
       </view>

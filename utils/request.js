@@ -10,9 +10,9 @@
 * +----------------------------------------------------------------------
 */
 const app = getApp()
-// 请修改为您自己的服务端地址，服务端安装请参考文档：http://doc.youdeyunke.com/zhunbei.html
-// const apiHost = 'https://demo2.youdeyunke.com';
-//  const apiHost = "http://192.168.1.111:8080"
+// 请修改为您自己的服务端地址 
+  //const apiHost = 'https://yl-api.s2g2b2c.com';
+   //const apiHost = "http://192.168.1.111:8080"
  const apiHost = "http://192.168.1.111:48080"
 const throttle = require('./throttle');
 

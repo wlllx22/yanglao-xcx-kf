@@ -56,7 +56,7 @@ Page({
                 post: resp.data.data
             })
             wx.setNavigationBarTitle({
-                title: '楼盘动态：' + resp.data.data.title
+                title: '家政动态：' + resp.data.data.title
             });
         })
     },
@@ -96,7 +96,7 @@ Page({
     },
 
     tipsHandle: function () {
-        var content = "楼盘动态资讯内容，旨在满足广大用户的信息需求而采集提供，如有异议请及时与我们联系。页面所载内容不代表本网站之观点或意见，仅供用户参考与借鉴，最终以政府网站或开发商实际公示为准，用户在购房时需慎重查验开发商的证件信息。"
+        var content = "家政动态资讯内容，旨在满足广大用户的信息需求而采集提供，如有异议请及时与我们联系。页面所载内容不代表本网站之观点或意见，仅供用户参考与借鉴。"
         wx.showModal({
             title: '免责声明',
             content: content,
